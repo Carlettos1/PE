@@ -20,8 +20,12 @@ public class Problem2 extends PERun {
         int prev = 1;
         int actual = 2;
         int sum = actual;
-        for (int i = 0; i < 4_000_000; i++) {
-
+        for (;actual < 4_000_000;) {
+            int tmp = prev;
+            prev = actual;
+            actual += tmp;
+            sum += actual % 2 == 0 ? actual : 0;
         }
+        System.out.println(sum);
     }
 }
