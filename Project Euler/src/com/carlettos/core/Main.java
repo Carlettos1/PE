@@ -1,5 +1,6 @@
 package com.carlettos.core;
 
+import com.carlettos.fifteen.*;
 import com.carlettos.five.*;
 
 /**
@@ -9,6 +10,6 @@ import com.carlettos.five.*;
 public class Main {
 
     public static void main(String[] args) {
-        PERun.run(new Problem7());
+        PERun.run(new Problem51());
     }
 }
